@@ -1,0 +1,45 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars */
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* Soft gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Congratulatory message styling */
+  h1 {
+    color: #ff6f61;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+  }
+  
+  /* Flower styling */
+  .flower {
+    position: absolute;
+    top: -50px; /* Start off-screen */
+    width: 40px; /* Size of the flower */
+    height: 40px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfm_NuvvznrCJb90w9GO0iNE5XAuzNmov55Q&s'); /* Flower image */
+    background-color: transparent; /* Use any color or transparent */
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fall linear infinite; /* Falling animation */
+    z-index: 1; /* Ensure flowers are behind the message */
+  }
+  
+  /* Falling animation */
+  @keyframes fall {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(100vh) rotate(360deg); /* Fall to the bottom and rotate */
+    }
+  }
+  
