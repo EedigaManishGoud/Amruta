@@ -8,26 +8,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: Arial, sans-serif;
   }
   
   /* Congratulatory message styling */
   h1 {
-    font-family: 'Great Vibes', cursive; /* Calligraphy-style font */
-    font-size: 3rem; /* Large font size */
-    color: #86588b; /* Rich purple */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    color: #ff6f61;
+    font-size: 3rem;
     text-align: center;
-    margin: 20px 0;
-}
-
-p {
-    font-family: 'Dancing Script', cursive; /* Elegant cursive */
-    font-size: 1.5rem;
-    line-height: 1.8;
-    color: #555; /* Neutral gray for readability */
-}
-
+    z-index: 2;
+  }
   
   /* Flower styling */
   .flower {
@@ -36,7 +26,6 @@ p {
     width: 40px; /* Size of the flower */
     height: 40px;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfm_NuvvznrCJb90w9GO0iNE5XAuzNmov55Q&s'); /* Flower image */
-    background-color: transparent; /* Use any color or transparent */
     background-size: cover;
     background-repeat: no-repeat;
     animation: fall linear infinite; /* Falling animation */
