@@ -8,16 +8,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
   /* Congratulatory message styling */
   h1 {
-    color: #ff6f61;
-    font-size: 3rem;
+    font-family: 'Great Vibes', cursive; /* Calligraphy-style font */
+    font-size: 3rem; /* Large font size */
+    color: #86588b; /* Rich purple */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
     text-align: center;
-    z-index: 2;
-  }
+    margin: 20px 0;
+}
+
+p {
+    font-family: 'Dancing Script', cursive; /* Elegant cursive */
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #555; /* Neutral gray for readability */
+}
+
   
   /* Flower styling */
   .flower {
